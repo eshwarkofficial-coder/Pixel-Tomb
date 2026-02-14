@@ -148,7 +148,7 @@ def decode():
             f.write(filecontent)
         return f"""
         <center>
-        <img src="/statics/20260214_150705.png" alt="PIXEL-TOMB Logo" width="100" height="100">
+        <img src="/statics/pixeltomb.png" alt="PIXEL-TOMB Logo" width="100" height="100">
         <h2>File Extracted Successfully!</h2>
         <a href="/download_file/{filename.decode()}">Download File</a>
         </center>
@@ -156,7 +156,7 @@ def decode():
     else:
         return f"""
         <center>
-        <img src="/statics/20260214_150705.png" alt="PIXEL-TOMB Logo" width="100" height="100">
+        <img src="/statics/pixeltomb.png" alt="PIXEL-TOMB Logo" width="100" height="100">
         <h2>Decoded Message:</h2>
         <p>{decrypted_data.decode()}</p>
         <a href="/">Go Back</a>
