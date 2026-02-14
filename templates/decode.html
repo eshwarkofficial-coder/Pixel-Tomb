@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PIXEL-TOMB Decrypted Steganography system</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #eef2f7;
+            color: #333;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h2 {
+            color: #005a9c;
+            text-align: center;
+            margin-top: 0;
+            padding: 20px;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 450px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        label {
+            font-weight: 600;
+            color: #005a9c;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        input[type="file"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #dae1e7;
+            border-radius: 8px;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #007bff;
+            background-color: #fff;
+        }
+        button[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        a {
+            display: inline-block;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        br {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="/statics/20260214_150705.png" alt="PIXEL-TOMB Logo" width="200" height="200">
+    <h2>PIXEL-TOMB Steganography Decoder</h2>
+    <form action="/decode" method="POST" enctype="multipart/form-data">
+        <label>Select Encoded Image:</label><br>
+        <input type="file" name="image" required><br><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+        <button type="submit">Decode</button>
+    </form>
+    <br>
+    <a href="/">Go to Encode Page</a>
+</body>
+</html>
