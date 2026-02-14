@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>PIXEL-TOMB Encrypted Steganography system to Hide Message / Document Inside Image</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -87,10 +88,14 @@
         br {
             display: none;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
-     <img src="/statics/pixeltomb.png" alt="PIXEL-TOMB Logo" width="100" height="100">
+     <img src="/statics/pixeltomb.png" alt="PIXEL-TOMB Logo" width="200" height="200">
     <h2>PIXEL-TOMB Steganography Encoder</h2>   
 
     <form action="/encode" method="POST" enctype="multipart/form-data">
